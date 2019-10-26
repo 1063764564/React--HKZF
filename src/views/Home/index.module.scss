@@ -1,0 +1,24 @@
+.home {
+    height: 100%;
+}
+
+.home {
+
+    // 在css-modules 中使用 :global包裹起来的代码，不会被重新命名
+    :global {
+        .am-tab-bar {
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            bottom: 0;
+        }
+    }
+}
+
+.tabbar {
+    :global {
+        .iconfont {
+            font-size: 20px;
+        }
+    }
+}
